@@ -22,7 +22,7 @@ playerselection = prompt("Enter your choice:");
 for (let i = 0; i <= 1000; i++) {
     getcomputerselection()
     if (playerselection === computerselection) {
-        console.log(playerselection + " vs " + computerselection + ": Tie (" + playerscore + ":" + computerscore + ")")
+        console.log("Round " + i + ": " + playerselection + " vs " + computerselection + ": Tie (" + playerscore + ":" + computerscore + ")")
     }
     else if (
         (playerselection === "Rock" && computerselection === "Paper") ||
@@ -30,7 +30,7 @@ for (let i = 0; i <= 1000; i++) {
         (playerselection === "Scissor" && computerselection === "Rock")
         ) {
         computerscore = computerscore + 1
-        console.log(playerselection + " vs " + computerselection + ": Computer wins! (" + playerscore + ":" + computerscore + ")")
+        console.log("Round " + i + ": " + playerselection + " vs " + computerselection + ": Computer wins! (" + playerscore + ":" + computerscore + ")")
 
     }
     else if (
@@ -39,7 +39,7 @@ for (let i = 0; i <= 1000; i++) {
         (playerselection === "Scissor" && computerselection === "Paper")
         ) {
         playerscore = playerscore + 1
-        console.log(playerselection + " vs " + computerselection + ": Player wins! (" + playerscore + ":" + computerscore + ")")
+        console.log("Round " + i + ": " + playerselection + " vs " + computerselection + ": Player wins! (" + playerscore + ":" + computerscore + ")")
     }
     else {
         console.log("-Invalid input- " + playerselection + " vs " + computerselection)
