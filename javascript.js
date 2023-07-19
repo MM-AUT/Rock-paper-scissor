@@ -16,7 +16,11 @@ function getcomputerselection() {
     }
 }
 // get the player selection through prompt
-playerselection = prompt("Enter your choice:");
+const btnrock = document.querySelector("#rock");
+btnrock.addEventListener('click', () => {
+    playerselection = "Rock";
+});
+
 
 //determine who won
 for (let i = 0; i <= 1000; i++) {
